@@ -1,0 +1,11 @@
+#formatMap{
+
+    display:flex;
+    width:800px;
+    height:100%;
+
+}
+.leaflet-container{
+    width: 100%;
+    margin: 3px;
+}

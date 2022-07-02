@@ -1,0 +1,27 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://calebp94.github.io/om-contracts/",
+  "scripts": {
+    "build": "npm -prefix my-app run build",
+    "preinstall": "cd ./back-end && npm install",
+    "install": "cd ./front-end && npm install",
+    "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
+    "start:backend": "npm --prefix ./back-end start",
+    "start:frontend": "npm --prefix ./front-end start",
+    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./my-app\" ",
+    "predeploy": "npm -prefix my-app run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "snackbar": "^1.1.0"
+  }
+}
